@@ -1,18 +1,17 @@
 <template>
   <div id="app">
-    
+    <Header />
     <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-*{
-  padding: 0;
-  margin: 0;
+
+<script lang="ts">
+import Header from './components/Header.vue'
+
+export default{
+  components:{
+    Header
+  }
 }
-#app{
-  min-height: 100vh;
-  background-image: url('http://localhost:8080/assets/background.jpg');
-  background-position: bottom;
-}
-</style>
+</script>
